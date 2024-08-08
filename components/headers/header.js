@@ -12,6 +12,7 @@ export const Headers = () => {
           width={360}
           height={360}
           alt="Picture of the author"
+          priority={true}
         />
       </div>
       <div className="flex flex-col gap-6 text-center items-center px-4 font-bold tracking-tight text-black w-full animate-fadeLeft">
