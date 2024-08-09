@@ -9,9 +9,12 @@ export const Headers = () => {
         <Image
           className="rounded-full"
           src="/profil_picture.jpg"
+          layout="responsive"
           width={360}
           height={360}
+          sizes="(max-width: 600px) 280px, (max-width: 1200px) 50vw, 33vw" // Définit les tailles en fonction de la largeur de l'écran
           alt="Picture of the author"
+          quality={100}
           priority={true}
         />
       </div>
