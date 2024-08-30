@@ -31,8 +31,11 @@ const Timeline = () => {
             <p className="mt-2 text-base font-normal text-gray-600">
               {item.description}
             </p>
-            {index < timelineData.length - 1 && (
-              <span className="absolute top-1/2 right-0 w-4 sm:w-8 h-4 sm:h-8 transform translate-x-1/2 -translate-y-1/2 bg-indigo-500 rounded-full"></span>
+            {index < timelineData.length && (
+              <>
+                <span className="absolute top-1/2 right-0 w-4 h-4 bg-indigo-500 rounded-full animate-ping"></span>
+                <span className="absolute top-1/2 right-0 w-4 h-4 bg-indigo-500 rounded-full"></span>
+              </>
             )}
           </div>
         ))}

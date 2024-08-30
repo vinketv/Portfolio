@@ -1,5 +1,7 @@
 import Timeline from "@/components/Timeline";
 import { Headers } from "@/components/headers/header";
+import { Project } from "@/components/project/Project";
+import { Skills } from "@/components/skills/Skills";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <div className="relative mx-auto h-screen w-full max-w-7xl px-6 md:px-8 lg:px-12">
         <Headers />
         <Timeline />
+        <Skills />
+        <Project />
       </div>
       <div>{/* Footer */}</div>
     </>
